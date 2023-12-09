@@ -1,0 +1,42 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint:js": "eslint --ext \".ts,.vue\" --ignore-path .gitignore .",
+    "lint:prettier": "prettier --check .",
+    "lint:prettier:fix": "prettier --fix .",
+    "lint": "bun lint:js && bun lint:prettier",
+    "lintfix": "prettier --write --list-different . && bun lint:js --fix"
+  },
+  "devDependencies": {
+    "@egoist/tailwindcss-icons": "^1.4.0",
+    "@iconify-json/circle-flags": "^1.1.45",
+    "@iconify-json/fa6-solid": "^1.1.19",
+    "@iconify/json": "^2.2.154",
+    "@intlify/unplugin-vue-i18n": "^1.5.0",
+    "@nuxt/devtools": "latest",
+    "@nuxtjs/color-mode": "^3.3.2",
+    "@nuxtjs/eslint-config-typescript": "^12.1.0",
+    "@nuxtjs/eslint-module": "latest",
+    "@nuxtjs/tailwindcss": "^6.10.1",
+    "@pinia/nuxt": "latest",
+    "@vueuse/nuxt": "^10.7.0",
+    "eslint": "^8.55.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "nuxt": "^3.8.2",
+    "prettier": "^3.1.0",
+    "vue": "^3.3.10",
+    "vue-i18n": "^9.8.0",
+    "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "@types/js-cookie": "^3.0.6"
+  }
+}
