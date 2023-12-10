@@ -24,6 +24,7 @@
     "@nuxtjs/color-mode": "^3.3.2",
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
     "@nuxtjs/eslint-module": "latest",
+    "@nuxtjs/i18n": "next",
     "@nuxtjs/tailwindcss": "^6.10.1",
     "@pinia/nuxt": "latest",
     "@vueuse/nuxt": "^10.7.0",
