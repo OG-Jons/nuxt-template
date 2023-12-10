@@ -6,7 +6,7 @@ export default <Partial<Config>>{
   plugins: [
     iconsPlugin({
       // Select the icon collections you want to use
-      collections: getIconCollections(["circle-flags"]),
+      collections: getIconCollections(["circle-flags", "iconamoon"]),
     }),
   ],
 };

@@ -1,19 +1,23 @@
 <script setup>
 const colorMode = useColorMode();
+
+const changeColorMode = () => {
+  colorMode.preference = colorMode.value === "dark" ? "light" : "dark";
+};
 </script>
 
 <template>
-  <div>
-    <p class="p-4 pb-2">
-      <select
-        v-model="colorMode.preference"
-        class="border w-24 h-8 dark:bg-gray-900 dark:text-white dark:border-gray-700"
-      >
-        <option value="system">{{ $t("system") }}</option>
-        <option value="light">{{ $t("light") }}</option>
-        <option value="dark">{{ $t("dark") }}</option>
-      </select>
-    </p>
+  <div
+    class="m-1 rounded-full dark:bg-slate-600 bg-slate-200 h-fit w-fit p-1 flex justify-center items-center cursor-pointer"
+    @click="changeColorMode()"
+  >
+    <span v-if="colorMode.value === 'dark'" class="i-iconamoon-mode-dark-bold">
+    </span>
+    <span
+      v-if="colorMode.value === 'light'"
+      class="i-iconamoon-mode-light-bold"
+    >
+    </span>
   </div>
 </template>
 
